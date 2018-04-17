@@ -1,0 +1,238 @@
+/*
+Theme Name: Anders Arborist
+Author: Jakob Nanneson, Tofta Webbyrå
+Author URI: http://toftawebb.se
+Version: 1.0
+*/
+
+.fill {
+    height: auto;
+    max-width: 100%;
+}
+.desktop {
+    display: none;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 1em;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1440px;
+    background: white;
+}
+#navbar {
+    display: flex;
+    position: static;
+}
+#logo {
+    flex-grow: 1;
+}
+#show-menu {
+    width: 4em;
+    text-align: right;
+}
+#show-menu a {
+    position: relative;
+    top: -10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 3em;
+    text-decoration: none;
+    color: black;
+}
+#nav-items {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 85%;
+    background: #8BCA9B;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.3em;
+}
+#nav-items ul {
+    list-style: none;
+}
+#nav-items li {
+    margin: .5em 0;
+}
+#nav-items a {
+    color: #6C391D;
+    text-decoration: none;
+}
+#featured-image .phone {
+    display: block;
+}
+#header .caption {
+    margin-top: .2em;
+    margin-left: 10px;
+    font-size: .7em;
+}
+.save-space {
+    display: none;
+}
+#content {
+    margin: 10px;
+}
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#content p,
+#content ul {
+    line-height: 1.5em;
+}
+#profile {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.4em;
+    margin: 0 10px;
+}
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+#profile .photo {
+    float: left;
+    display: block;
+    margin-right: .5em;
+    width: 25%;
+}
+#profile .name {
+    display: block;
+    text-transform: uppercase;
+}
+#profile .email {
+    display: block;
+    color: black;
+}
+#profile .phone {
+    display: block;
+    color: black;
+}
+#profile .location {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+.infobox {
+    margin: 1em 10px 10px 10px;
+    padding: 1em 1em 10px 1em;
+    background: #B7DDC0;
+}
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.infobox h2 {
+    margin: 0;
+}
+.infobox p {
+    margin: 0;
+    margin-top: 10px;
+}
+#album-preview {
+    margin-top: 1em;
+}
+#album-preview .caption {
+    margin-top: .2em;
+    font-size: .7em;
+}
+.page-preview {
+    margin: 1em 10px 10px 10px;
+    padding: 1em 1em 10px 1em;
+    background: #FCF4AB;
+}
+.page-preview h2 {
+    margin: 0;
+}
+.page-preview h2 a {
+    color: black;
+    text-decoration: none;
+}
+.page-preview p {
+    margin: 0;
+    margin-top: 10px;
+}
+@media (min-width: 426px) {
+    .desktop {
+        display: block;
+    }
+    #navbar {
+        align-items: flex-end;
+        margin: 1em;
+    }
+    #logo {
+        width: 260px;
+        float: left;
+        flex-grow: unset;
+    }
+    #show-menu {
+        display: none;
+    }
+    #nav-items {
+        display: inline;
+        position: relative;
+        flex-grow: 1;
+        background: white;
+    }
+    #nav-items ul {
+        margin: 10px;
+    }
+    #nav-items li {
+        display: inline;
+    }
+    #nav-items a {
+        padding: .5em;
+    }
+    #nav-items a:hover {
+        text-decoration: underline;
+    }
+    #featured-image .phone {
+        display: none;
+    }
+    #featured-image .desktop {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .save-space {
+        display: inline;
+    }
+    #profile .photo {
+        width: 120px;
+    }
+    .infobox {
+        display: block;
+        float: left;
+        width: 40%;
+        height: 9em;
+    }
+    #album-preview {
+        clear: both;
+        padding-top: 1em;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .page-preview {
+        display: block;
+        float: left;
+        width: 40%;
+        height: 9em;
+    }
+}
+@media (min-width: 1024px) {
+    #column {
+        max-width: 683px;
+        width: 66%;
+        margin-left: 33%;
+    }
+    #profile {
+        position: fixed;
+        left: 0;
+        bottom: 10px;
+        width: 300px;
+        background: white;
+    }
+    #profile .photo {
+        width: 25%;
+    }
+}
